@@ -1,3 +1,4 @@
+
 '''
 Make sure you complete all the TODOs in this file.
 The prints have to contain the same text as indicated, don't add any more prints,
@@ -39,11 +40,41 @@ class Hangman:
         Checks if the letter is in the word.
     ask_letter()
         Asks the user for a letter.
+
+word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
+num_lives = 5  
+
+word_guessed = random.choice(word_list)
+print(word_guessed)
+
     '''
     def __init__(self, word_list, num_lives=5):
         # TODO 2: Initialize the attributes as indicated in the docstring
+        self.word_list = word_list
+        self.num_lives = num_lives
+
+        # To select a randomly guessed word from word_list
+
+        word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
+        num_lives = 5  
+
+        import random
+
+        print(random.choice(word_list))
+
+        word_guessed = 'watermelon'
+        
+        # num_letter is number of characters in word_guessed
+
+        num_letters = len(word_guessed)
+
+        print(num_letters)
+
+
+         #%%
         # TODO 2: Print two message upon initialization:
         # 1. "The mistery word has {num_letters} characters"
+        
         # 2. {word_guessed}
         pass
 
@@ -60,6 +91,13 @@ class Hangman:
 
         '''
         # TODO 3: Check if the letter is in the word. TIP: You can use the lower() method to convert the letter to lowercase
+        word_guessed = "watermelon"
+
+        inputString = input('a')
+
+        print('a', inputString)
+
+
         # TODO 3: If the letter is in the word, replace the '_' in the word_guessed list with the letter
         # TODO 3: If the letter is in the word, the number of UNIQUE letters in the word that have not been guessed yet has to be reduced by 1
         # TODO 3: If the letter is not in the word, reduce the number of lives by 1
