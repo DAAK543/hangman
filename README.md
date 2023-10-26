@@ -44,8 +44,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
        A list of the letters that have already been tried
 
 ##### Methods
-
-  class Hangman: 
+ 
 
   1. Initialize attributes in docstring
 
@@ -53,6 +52,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
         
        self.word_list = word_list
        self.num_lives = num_lives
+
 
   2. Select a randomly guessed word from word_list
 
@@ -64,6 +64,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
   
    word_guessed = 'watermelon'
  
+
   3. Determine the number of characters in word_guessed
      
      num_letters = len(word_guessed)
@@ -71,6 +72,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
      print(num_letters)
 
      num_letters = 10
+
 
  4. Select a random letter from the word_guess
     
@@ -83,6 +85,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
      while user_input == guess:   
   
      print(user_input)
+
 
       - Check if guessed letter is an alphabet
 
@@ -114,27 +117,141 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
          else: 
            print("Sorry, {t} is not in the word. Try again.")
 
-    5. Deploying functions
 
-       def check_guess(guess):
+ 5.      Deploying functions
+
+         def check_guess(guess):
   
          if guess == "t":
 
          return input('please guess a letter:').lower()
   
-         print(check_guess)
+           print(check_guess)
   
-         "break" 
+          "break" 
 
-
-        print("Invalid letter. Please, enter a single alphabetical character.")
+          print("Invalid letter. Please, enter a single alphabetical character.")
      
-
-
-       def ask_for_input(guess):
+          def ask_for_input(guess):
   
-         for guess in word_guessed:
+          for guess in word_guessed:
   
-         if guess == "t" and word_guessed == "watermelon":
+          if guess == "t" and word_guessed == "watermelon":
 
-        print("Good guess! {t} is in the word.")
+          print("Good guess! {t} is in the word.")
+
+
+  6.     class definition
+          class Hangman:
+  
+        def __init__(self, word_list, num_lives):
+        self.word_list = word_list
+        self.num_lives = num_lives
+
+       # Select a randomly guessed word from word_list
+
+        import random
+
+        word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
+
+        print(random.choice(word_list))
+
+
+      # selected random word from word_list is word_guessed
+
+        word_guessed = 'orange'
+
+        word_guessed = ['o', 'r', 'a', 'n', 'g', 'e',]
+
+
+       # Determine the number of letters in word_guessed
+     
+       num_letters = len(word_guessed)
+
+       word_guessed = ['o', 'r', 'a', 'n', 'g', 'e']
+
+      print(num_letters)
+
+      num_letters = 6
+
+
+     # The number of lives the player has at the start of the game 'num_lives'
+
+      num_lives = 5
+
+
+     # Define a method called check_guess and pass guess a parameter.
+
+      check_guess = input('guess:').lower()
+
+      print(check_guess)
+
+
+      # checking of guess_letter is in word_guessed
+
+     guess = "r"
+
+      word_guessed = ['o', 'r', 'a', 'n', 'g', 'e']
+
+      for char in word_guessed:
+  
+       if char == "r":
+   
+      print("Good guess!{r}is in the word.")
+
+      guess = "r"
+
+      
+      # Replacing the underscore in word_guessed with r
+
+       wordrguessed = ['o', 'r', 'a', 'n', 'g', 'e']
+
+       for char in wordrguessed:
+  
+        if char == "r":
+        
+        for r in wordrguessed:
+
+       print (r)
+
+        if r == 'orange':  
+         break
+  
+         print(r)
+
+
+      # letter not in word
+
+      guess ='P'
+       word_guessed = ['o', 'r', 'a', 'n', 'g', 'e']
+
+      f or letter != word reduce num_lives by 1:
+
+       print("Sorry, {'p'} is not in the word.")
+      else:
+       print( "You have {4} lives left.")
+
+
+    # ask_for_input method
+  
+     while True:  
+     
+     guess = input('choose a single letter:')
+
+     x = guess.isalpha()
+
+     if guess != "a single alphabet char":
+
+      print("invalid letter")
+
+      list_of_guesses = ['b', 'y', 'm', 'j', 'k']
+
+      # appending list_of_guesses with user-guess
+
+       user_guess = 'r'
+       list_of_guesses = ['b', 'y', 'm', 'j', 'k']
+       list_of_guesses.append("r")
+
+        print(list_of_guesses)
+
+          
