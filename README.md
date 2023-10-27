@@ -43,7 +43,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
     5. list_letters: list
        A list of the letters that have already been tried
 
-##### Methods
+#### Methods
  
 
   1. Initialize attributes in docstring
@@ -74,9 +74,9 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
      num_letters = 10
 
 
- 4. Select a random letter from the word_guess
+  4. Select a random letter from the word_guess
     
-    word_guessed = 'watermelon'
+     word_guessed = 'watermelon'
 
      guess = 't'
 
@@ -118,7 +118,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
            print("Sorry, {t} is not in the word. Try again.")
 
 
- 5.      Deploying functions
+  5.     Deploying functions
 
          def check_guess(guess):
   
@@ -142,13 +142,15 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
 
 
   6.     class definition
+
           class Hangman:
   
         def __init__(self, word_list, num_lives):
         self.word_list = word_list
         self.num_lives = num_lives
 
-       # Select a randomly guessed word from word_list
+
+       ###### Select a randomly guessed word from word_list
 
         import random
 
@@ -157,39 +159,39 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
         print(random.choice(word_list))
 
 
-      # selected random word from word_list is word_guessed
+       ###### selected random word from word_list is word_guessed
 
         word_guessed = 'orange'
 
         word_guessed = ['o', 'r', 'a', 'n', 'g', 'e',]
 
 
-       # Determine the number of letters in word_guessed
+       ###### Determine the number of letters in word_guessed
      
        num_letters = len(word_guessed)
 
        word_guessed = ['o', 'r', 'a', 'n', 'g', 'e']
 
-      print(num_letters)
+        print(num_letters)
 
-      num_letters = 6
-
-
-     # The number of lives the player has at the start of the game 'num_lives'
-
-      num_lives = 5
+        num_letters = 6
 
 
-     # Define a method called check_guess and pass guess a parameter.
+      ###### The number of lives the player has at the start of the game 'num_lives'
+
+       num_lives = 5
+
+
+      ###### Define a method called check_guess and pass guess a parameter.
 
       check_guess = input('guess:').lower()
 
       print(check_guess)
 
 
-      # checking of guess_letter is in word_guessed
+      ###### checking of guess_letter is in word_guessed
 
-     guess = "r"
+      guess = "r"
 
       word_guessed = ['o', 'r', 'a', 'n', 'g', 'e']
 
@@ -202,7 +204,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
       guess = "r"
 
       
-      # Replacing the underscore in word_guessed with r
+      ###### Replacing the underscore in word_guessed with r
 
        wordrguessed = ['o', 'r', 'a', 'n', 'g', 'e']
 
@@ -220,7 +222,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
          print(r)
 
 
-      # letter not in word
+      ###### letter not in word
 
       guess ='P'
        word_guessed = ['o', 'r', 'a', 'n', 'g', 'e']
@@ -232,7 +234,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
        print( "You have {4} lives left.")
 
 
-    # ask_for_input method
+    ###### ask_for_input method
   
      while True:  
      
@@ -246,7 +248,7 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
 
       list_of_guesses = ['b', 'y', 'm', 'j', 'k']
 
-      # appending list_of_guesses with user-guess
+    ###### appending list_of_guesses with user-guess
 
        user_guess = 'r'
        list_of_guesses = ['b', 'y', 'm', 'j', 'k']
@@ -270,13 +272,13 @@ word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
 
 print(random.choice(word_list))
 
-# selected random word from word_list is word_guessed
+###### selected random word from word_list is word_guessed
 
 word_guessed = 'orange'
 
 word_guessed = ['o', 'r', 'a', 'n', 'g', 'e',]
 
-# Determine the number of letters in word_guessed
+###### Determine the number of letters in word_guessed
      
 num_letters = len(word_guessed)
 
@@ -286,18 +288,18 @@ print(num_letters)
 
 num_letters = 6
 
-# The number of lives the player has at the start of the game 'num_lives'
+###### The number of lives the player has at the start of the game 'num_lives'
 
 num_lives = 5
 
-# Define a method called check_guess and pass guess a parameter.
+###### Define a method called check_guess and pass guess a parameter.
 
 check_guess = input('guess:').lower()
 
 print(check_guess)
 
 
-# checking if guess_letter is in word_guessed
+###### checking if guess_letter is in word_guessed
 
 guess = "r"
 
@@ -317,7 +319,7 @@ for char in word_guessed:
   
     print(r)
 
-# letter not in word
+###### letter not in word
 
 guess ='P'
 
@@ -335,7 +337,7 @@ print("Sorry, {'p'} is not in the word.")
 print('num-lives')
 
 
-#  ask_for_input method
+######  ask_for_input method
   
 while True:  
      
@@ -352,7 +354,7 @@ while True:
 
      num_lives = 5  
 
-###### Game
+### Game
 
      class Hangman():
        
