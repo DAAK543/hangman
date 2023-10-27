@@ -53,6 +53,7 @@ for char in wordrguessed:
   print("Good guess!{r}is in the word.")
 
   for r in wordrguessed:
+
     print (r)
 
   if r == 'orange':  
@@ -61,13 +62,14 @@ for char in wordrguessed:
     print(r)
 
 # letter not in word
+
 guess ='P'
+
 word_guessed = ['o', 'r', 'a', 'n', 'g', 'e']
 
 if 'P' != word_guessed: num_lives < 1
 
-num_lives = 4 
-
+num_lives = 4
 
 
 print("Sorry, {'p'} is not in the word.")
@@ -93,6 +95,8 @@ while True:
 
      num_lives = 5  
 
+     # num_lives < 1 if guess is wrong.
+     
      class Hangman():
        
        def __init__(self, word_list, num_lives=5):
@@ -106,64 +110,109 @@ while True:
           return game
         print(Hangman)
 
-        def play_game(word_list):
+        def word_guessed(word_list):
          return word_list
-         print(play_game)
+        print(word_guessed)
 
         word_list = ['apple', 'banana', 'orange', 'pear', 'strawberry', 'watermelon']
+
         word_guessed = ['o', 'r', 'a', 'n', 'g', 'e'] 
-        guess
-        num_letters = 6
+
+        num_letter = len(word_guessed)
+        print(num_letter)
+        
+        
 
         for guess in word_guessed, "num_lives"  > 0:
 
-         def game(word_list, num_lives):
+         def game(guess, num_lives):
            
            return num_lives and guess
          
-           print("you won the game or lost")
+        print(game)
 
-           while True:
+        while True:
              
              if num_lives == 0:
+
               print('you lost!')
 
-             if num_lives != 0 and num_letter <= 0:
-               print( 'Congratulations. You won the game!')
+             if num_lives != 0 and "num_letter" <= 0:
+               
+               print('Congratulations. You won the game!')
 
            
-           num_lives.guess = game
+             num_lives.guess = game
 
-           guess_1 = guess() 
-           guess_2 = guess()
-           guess_3 = guess()
-           guess_4 = guess()
-           guess_5 = guess()
 
-           game(num_lives, guess)
+             guess = list_of_guesses.pop(0) 
+             
+
+             game(num_lives, guess)
             
-           list_of_guesses = ['b', 'y', 'm', 'j', 'k']
-           guess = 'b'
-           num_lives = 5-1 
-           num_letter = 6-1
+             list_of_guesses = ['b', 'y', 'm', 'j', 'k']
 
-           guess = 'y'
-           num_lives = 5-2 
-           num_letter = 6-2
+             guess_1 = list_of_guesses.pop(0)
+             print(guess_1)
+             print(list_of_guesses)
 
-           guess = 'm'
-           num_lives = 5-3 
-           num_letter = 6-3
+             num_lives = 5-1 
+             print(num_lives)
 
-           guess = 'j'
-           num_lives = 5-4 
-           num_letter = 6-4
+             num_letter = 6-1
 
-           guess = 'k'
-           num_lives = 5-5 
-           num_letter = 6-5
+             list_of_guesses = ['y', 'm', 'j', 'k']
+             guess_2 = list_of_guesses.pop(0)
+             print(guess_2)
+             print(list_of_guesses)
+                        
+             num_lives = 5-2 
+             print(num_lives)
 
-           print('you lost!')
+             num_letter = 6-2
+             print(num_letter)
+
+             list_of_guesses = ['m', 'j', 'k']
+             guess_3 = list_of_guesses.pop(0)
+             print(guess_3)
+             print(list_of_guesses)
+             
+             num_lives = 5-3 
+             print(num_lives)
+
+             num_letter = 6-3
+             print(num_letter)
+             
+             list_of_guesses = ['j', 'k']
+             guess_4 = list_of_guesses.pop(0)
+             print(guess_4)
+             print(list_of_guesses)
+
+             
+             num_lives = 5-4 
+             print(num_lives)
+
+             num_letter = 6-4
+             print(num_letter)
+
+             list_of_guesses = ['j', 'k']
+             guess_5 = list_of_guesses.pop(0)
+             print(guess_5)
+             print(list_of_guesses)
+
+             num_lives = 5-5 
+             print(num_lives)
+             num_letter = 6-5
+
+             
+             if num_lives == 0:
+
+              print('you lost!')
+
+             if num_lives != 0 and "num_letter" <= 0:
+               
+              print('Congratulations. You won the game!')
+#%%
 
            
        
